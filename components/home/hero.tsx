@@ -4,7 +4,10 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Session } from "next-auth";
 
-export default function Hero({ session }: { session: Session }) {
+type HeroProps = {
+  session: Session | null;
+};
+export default function Hero({ session }: HeroProps) {
   return (
     <section className="relative overflow-hidden py-20">
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-b from-primary/50 to-transparent blur-3xl rounded-full pointer-events-none" />

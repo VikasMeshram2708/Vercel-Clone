@@ -8,7 +8,6 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { auth } from "@/auth";
-import { LogoutBtn } from "./auth-btns/btns";
 import { dropdownNavLinks, navLinks } from "@/data";
 import { Avatar, AvatarImage } from "./ui/avatar";
 

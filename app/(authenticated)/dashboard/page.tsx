@@ -5,9 +5,9 @@ import React from "react";
 export default async function DashboardPage() {
   const session = await auth();
   return (
-    <div className="">
+    <div className="max-w-5xl mx-auto">
       <h2>Dashboard page</h2>
-      {/* <pre>{JSON.stringify(user?.username ?? "test")}</pre> */}
+      <pre>{JSON.stringify(session?.user)}</pre>
       <ReposContainer />
     </div>
   );
