@@ -10,7 +10,10 @@ export const SignInBtn = ({ cn }: SignInBtnProps) => {
     <form
       action={async () => {
         "use server";
-        await signIn("github");
+        await signIn("github", {
+          redirect: true,
+          redirectTo: "/dashboard",
+        });
       }}
     >
       <Button type="submit" className={cn ? cn : ""}>
